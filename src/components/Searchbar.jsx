@@ -4,7 +4,7 @@ import css from '../css/searchbar.module.css'
 export const Searchbar = ({onChange, onClick}) => {
     return (
         <div className={css.formclass}>  
-            <form>      
+            <form onSubmit={onClick}>      
                 <div className={css.formdiv}>
                     <SearchButton onClick={onClick} />  
                     <input
